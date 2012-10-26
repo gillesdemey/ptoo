@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ptoo</title>
+	<%= stylesheet_link_tag    "application", :media => "all" %>
+	<%= javascript_include_tag "application" %>
+	<%= csrf_meta_tags %>
+</head>
+<body data-spy="scroll" data-target=".nav-list">
+
+	<div class="navbar">
+		<div class="navbar-inner">
+			<a class="brand" href="#"><i class="icon-fire"></i> Ptoo</a>
+			<ul class="nav">
+				<li class="active"><%= link_to("Articles", posts_path) %></li>
+				<li><a href="#">About us</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="container">
+
+		<div class="row">
+			<div class="span3">
+				<ul class="nav nav-list nav-side affix">
+					<li data-toggle="collapse" class="nav-header">Server Sent Events <i class="icon-chevron-down"></i></li>
+					<li>
+						<ul class="nav nav-list collapse in">
+							<li><a href="#what-are-sses">What are SSE's?</a></li>
+							<li><a href="#what-are-the-alternatives">What are the alternatives?</a></li>
+							<li><a href="#how-do-we-use-them">How do we use them?</a></li>
+							<li><a href="#example">Example</a></li>
+						</ul>
+					</li>
+					<li data-toggle="collapse" class="nav-header">Mobile Ads <i class="icon-chevron-down"></i></li>
+					<li>
+						<ul class="nav nav-list collapse in">
+							<li><a href="#is-there-a-problem">Is there a problem?</a></li>
+							<li><a href="#what-are-the-alternatives">What are the current solutions?</a></li>
+							<li><a href="#how-do-we-use-them">How do we use them?</a></li>
+							<li><a href="#example">Example</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+			<div class="span7">
+				<%= yield %>
+			</div>
+		</div>
+
+	</div>
+
+</body>
+</html>

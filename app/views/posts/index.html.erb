@@ -1,0 +1,17 @@
+<h1>Server Sent Events</h1>
+
+<% @posts.each do |post| %>
+  <article>
+    <header>
+      <h1 class="article-title" id="<%= post.slug %>"><%= post.title %></h1>
+      <p>
+        <%= I18n.t 'common_words.by' %> <%= post.author %>
+        <small><%= time_ago_in_words(post.created_at) %> <%= I18n.t 'date.ago' %></small>
+      </p>
+    </header>
+    <%= raw post %>
+    <footer>
+      <p></p>
+    </footer>
+  </article>
+<% end %>
