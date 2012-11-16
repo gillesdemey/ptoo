@@ -5,6 +5,9 @@ class Post < ActiveRecord::Base
   belongs_to :author
   belongs_to :category
 
+	extend FriendlyId
+	friendly_id :title, :use => :slugged
+
   def to_s
   	read_attribute :content
   end

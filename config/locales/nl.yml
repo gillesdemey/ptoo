@@ -1,4 +1,7 @@
 nl:
+  navigation:
+    articles: "Artikels"
+    about_us: "Over Ons"
   common_words:
     by: "door"
   date:

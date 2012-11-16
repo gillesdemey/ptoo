@@ -1,4 +1,7 @@
 en:
+  navigation:
+    articles: "Articles"
+    about_us: "About us"
   common_words:
     by: "by"
   date:

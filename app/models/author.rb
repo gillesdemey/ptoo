@@ -1,5 +1,7 @@
 class Author < ActiveRecord::Base
-  attr_accessible :image, :name
+
+  # Setup accessible (or protected) attributes for your model
+  attr_accessible :email, :password, :image, :name
 
   has_many :post
 
