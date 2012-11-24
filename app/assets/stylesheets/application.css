@@ -157,10 +157,10 @@ to {
 body.dark .glass {
   border-bottom: solid 1px #eee;
   color: #000;
-  -webkit-filter: invert();
-  -ms-filter: invert();
-  -moz-filter: invert();
-  -o-filter: invert();
+  -webkit-filter: invert(100%);
+  -ms-filter: invert(100%);
+  -moz-filter: invert(100%);
+  -o-filter: invert(100%);
 }
 
 .nav-main {
@@ -178,10 +178,10 @@ body.dark .glass {
 }
 
 .dark .nav-main {
-  -webkit-filter: invert();
-  -ms-filter: invert();
-  -moz-filter: invert();
-  -o-filter: invert();
+  -webkit-filter: invert(100%);
+  -ms-filter: invert(100%);
+  -moz-filter: invert(100%);
+  -o-filter: invert(100%);
 }
 
 .nav-main a {
