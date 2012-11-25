@@ -184,6 +184,13 @@ body.dark .glass {
   -o-filter: invert(100%);
 }
 
+.dark img {
+  -webkit-filter: invert(100%);
+  -ms-filter: invert(100%);
+  -moz-filter: invert(100%);
+  -o-filter: invert(100%);
+}
+
 .nav-main a {
   color: #FFF;
 }
@@ -255,6 +262,10 @@ article p, article .content {
   font-size: 1em;
   font-family: 'Crimson Text', Georgia, serif;
   line-height: 1.2em;
+}
+
+article p {
+  padding-bottom: 1.5em;
 }
 
 article small {

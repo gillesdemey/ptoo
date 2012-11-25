@@ -2,9 +2,9 @@
   <article class="span6 multi-column">
     <header>
       <h1 class="article-title" id="<%= post.slug %>"><%= post.title %></h1>
-      <!--<p class="article-meta">
-        <%= I18n.t 'common_words.by' %> <%= post.author %>
-        <small><%= time_ago_in_words(post.created_at) %> <%= I18n.t 'date.ago' %></small>-->
+      <p class="article-meta">
+        <%= I18n.t 'common_words.by' %> <%= post.admin_user %>
+        <small><%= time_ago_in_words(post.created_at) %> <%= I18n.t 'date.ago' %></small>
       </p>
     </header>
     <div class="content">
