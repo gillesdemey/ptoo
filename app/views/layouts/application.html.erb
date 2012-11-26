@@ -2,14 +2,11 @@
 <html>
 <head>
 	<title>Ptoo</title>
-	<%= stylesheet_link_tag	"reset", :media => "all" %>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<%= stylesheet_link_tag	"application", :media => "all" %>
-	<%= stylesheet_link_tag	"bootstrap", :media => "all" %>
-	<%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Raleway:600,200" %>
+	<%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Raleway:600,300,200" %>
 	<%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Crimson+Text:600,400" %>
-	<%= javascript_include_tag "modernizr.js" %>
 	<%= javascript_include_tag "application" %>
-	<%= javascript_include_tag "bootstrap.min" %>
 	<%= csrf_meta_tags %>
 </head>
 <body>
@@ -31,15 +28,15 @@
 				</li>
 			</ul>
 		</nav>
-	</div>
-	<section class="glass">
-		<div class="glass-background" id="glass-background"></div>
 		<div class="night-day pull-right">
 			<div class="btn-group">
 				<button class="btn set-light active"><i class="icon-custom sun"></i></button>
 				<button class="btn set-dark"><i class="icon-custom moon"></i></button>
 			</div>
 		</div>
+	</div>
+	<section class="glass">
+		<div class="glass-background" id="glass-background"></div>
 		<div class="container">
 			<header class="introduction">
 				<h1 class="title">Server Sent Events</h1>
