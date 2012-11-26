@@ -10,12 +10,10 @@
 # // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 # // GO AFTER THE REQUIRES BELOW.
 # //
-# //= require_self
 # //= require jquery
 # //= require jquery_ujs
 # //= require bootstrap.min
 # //= require modernizr
-# //= require_tree .
 
 $(document).ready ->
 	$(".glass").addClass("animated")
