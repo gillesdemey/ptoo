@@ -13,7 +13,7 @@ Ptoo::Application.routes.draw do
 		resources :posts
 	end
 
-	resources :users do
+	resources :admin_users, :path => :users do
 		resources :posts
 	end
 

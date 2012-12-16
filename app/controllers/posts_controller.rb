@@ -8,7 +8,7 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all
+    @posts = Post.find_all_by_admin_user_id(params[:admin_user_id])
 
     respond_to do |format|
       format.html # index.html.erb
