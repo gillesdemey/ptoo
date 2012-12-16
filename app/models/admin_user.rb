@@ -7,8 +7,8 @@ class AdminUser < ActiveRecord::Base
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :full_name, :email, :password, :password_confirmation, :remember_me, :twitter, :image
-  # attr_accessible :title, :body
 
+  has_many :posts
 
   def to_s
     read_attribute :full_name
