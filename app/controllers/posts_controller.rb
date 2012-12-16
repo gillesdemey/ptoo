@@ -8,7 +8,12 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.find_all_by_admin_user_id(params[:admin_user_id])
+
+    if params[:admin_user_id] == nil
+     @posts = Post.all
+    else
+      @posts = Post.find_all_by_admin_user_id(params[:admin_user_id])
+    end
 
     respond_to do |format|
       format.html # index.html.erb
