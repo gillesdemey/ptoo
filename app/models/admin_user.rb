@@ -9,7 +9,6 @@ class AdminUser < ActiveRecord::Base
   attr_accessible :full_name, :email, :password, :password_confirmation, :remember_me, :twitter, :image
 
   has_many :posts
-  accepts_nested_attributes_for :posts
 
   def to_s
     read_attribute :full_name
