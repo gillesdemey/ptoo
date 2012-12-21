@@ -30,7 +30,7 @@ $(document).ready ->
 		$(@).addClass("active")
 		return false
 
-animateBg(elem) ->
+animateBg = (elem) ->
 	# get current position
 	posBg = getBackgroundPosition(elem)
 	posY = posBg[0]
@@ -43,7 +43,7 @@ animateBg(elem) ->
 		'linear'
 	return false
 
-getBackgroundPosition(elem) ->
+getBackgroundPosition = (elem) ->
 	backgroundPos = $(elem).css('backgroundPosition').split(" ")
 	return backgroundPos
 	# now contains an array like ["0%", "50px"]
