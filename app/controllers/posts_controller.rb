@@ -28,7 +28,7 @@ class PostsController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: @post }
+      format.json { render json: @post, callback: params[:callback] }
     end
   end
 
