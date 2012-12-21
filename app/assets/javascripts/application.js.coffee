@@ -22,11 +22,13 @@ $(document).ready ->
 		$("body").addClass("dark")
 		$(".set-light").removeClass("active")
 		$(@).addClass("active")
+		return false
 
 	$(".set-light").click ->
 		$("body").removeClass("dark")
 		$(".set-dark").removeClass("active")
 		$(@).addClass("active")
+		return false
 
 animateBg(elem) ->
 	# get current position
@@ -39,15 +41,9 @@ animateBg(elem) ->
 		'background-position-y': "100%",
 		100000,
 		'linear'
+	return false
 
 getBackgroundPosition(elem) ->
 	backgroundPos = $(elem).css('backgroundPosition').split(" ")
 	return backgroundPos
 	# now contains an array like ["0%", "50px"]
-
-# window.onscroll = function() {
-# 		var speed = 0.7;
-# 		$(".glass").css({
-# 			'height': 280 - (window.pageYOffset / speed)
-# 		});
-# };
