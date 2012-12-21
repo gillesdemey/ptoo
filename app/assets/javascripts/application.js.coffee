@@ -28,7 +28,7 @@ $(document).ready ->
 		$(".set-dark").removeClass("active")
 		$(@).addClass("active")
 
-animateBg (elem) ->
+animateBg(elem) ->
 	# get current position
 	posBg = getBackgroundPosition(elem)
 	posY = posBg[0]
@@ -42,6 +42,7 @@ animateBg (elem) ->
 
 getBackgroundPosition(elem) ->
 	backgroundPos = $(elem).css('backgroundPosition').split(" ")
+	return backgroundPos
 	# now contains an array like ["0%", "50px"]
 
 # window.onscroll = function() {
