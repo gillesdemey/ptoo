@@ -10,7 +10,7 @@ class PostsController < ApplicationController
   def index
 
     if params[:admin_user_id] == nil
-     @posts = Post.find_all_by_admin_user_id(2)
+     @posts = Post.where(admin_user_id: 2).order("created_at")
     else
       @posts = Post.find_all_by_admin_user_id(params[:admin_user_id])
     end
